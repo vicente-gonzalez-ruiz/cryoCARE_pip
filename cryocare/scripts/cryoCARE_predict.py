@@ -93,10 +93,10 @@ def denoise(config: dict, mean: float, std: float, even: str, odd: str, output_f
 
     for l in even.header.dtype.names:
         if l == 'label':
-            new_label = np.concatenate((even.header[l][1:-1], np.array([
-                'cryoCARE                                                ' + datetime.datetime.now().strftime(
-                    "%d-%b-%y  %H:%M:%S") + "     "]),
-                                        np.array([''])))
+            #new_label = np.concatenate((even.header[l][1:-1], np.array(['cryoCARE ' + datetime.datetime.now().strftime("%d-%b-%y  %H:%M:%S") + "     "]), np.array([''])))
+            date_str = datetime.datetime.now().strftime("%d-%b-%y  %H:%M:%S")
+            label_str = 'cryoCARE ' + date_str + ' '
+            new_label = np.concatenate((even.header[l][1:-1], np.array([label_str.encode('utf-8')]), np.array([b'']) ))
             print(new_label)
             mrc.header[l] = new_label
         else:
