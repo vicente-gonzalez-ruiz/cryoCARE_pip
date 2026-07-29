@@ -171,8 +171,8 @@ class CryoCARE_Dataset(tf.keras.utils.Sequence):
                     self.sample_shape[0] == self.sample_shape[2]:
                 rot_k = np.random.randint(0, 4, 1)
 
-                x[...,0] = np.rot90(x[...,0], k=rot_k, axes=self.rot_axes)
-                y[...,0] = np.rot90(y[...,0], k=rot_k, axes=self.rot_axes)
+                x[...,0] = np.rot90(x[...,0], k=rot_k.item(), axes=self.rot_axes)
+                y[...,0] = np.rot90(y[...,0], k=rot_k.item(), axes=self.rot_axes)
 
 
         if np.random.rand() > 0.5:
