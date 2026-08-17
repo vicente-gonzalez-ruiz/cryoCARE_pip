@@ -10,10 +10,6 @@
       python
       # Python 3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) 
       # [GCC 13.3.0] on linux
-
-      # Other packages ...
-      conda install -c conda-forge jupyterlab
-      conda install -c conda-forge mrcfile
       
 ## Old stuff ...
 
@@ -56,6 +52,10 @@ conda create -n cryocare_11 python=3.8 cudatoolkit=11.0 cudnn=8.0 -c conda-forge
 conda activate cryocare_11
 pip install tensorflow==2.4
 pip install cryoCARE
+
+# Other packages ... (DO NOT INSTALL OPENCV IN THIS ENVIRONMENT!)
+conda install -c conda-forge jupyterlab
+conda install -c conda-forge mrcfile
 ```
 
 ### For CUDA 10:
