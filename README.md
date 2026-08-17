@@ -11,6 +11,9 @@
       source ~/.zshrc
       conda config --set auto_activate_base false
 
+      # Other packages ...
+      conda install -c conda-forge jupyterlab
+
       # Borrame
       pip install tensorflow==2.8.0
       pip install "protobuf==3.20.3"
