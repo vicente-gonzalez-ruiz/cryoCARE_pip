@@ -14,17 +14,8 @@
       # Other packages ...
       conda install -c conda-forge jupyterlab
       conda install -c conda-forge mrcfile
-
-      # Borrame
-      pip install tensorflow==2.8.0
-      pip install "protobuf==3.20.3"
-      pip install "numpy<2" mrcfile csbdeep psutil
-      pip install --no-deps git+https://github.com/vicente-gonzalez-ruiz/cryoCARE_pip.git
-      pip install nvidia-cuda-runtime nvidia-cublas
-      pip install nvidia-cudnn-cu13
-      pip install nvidia-cuda-runtime-cu11
-
-## Old stuff
+      
+## Old stuff ...
 
 This package is a memory efficient implementation of [cryoCARE](https://github.com/juglab/cryoCARE_T2T).
 
@@ -37,7 +28,6 @@ You can use Warp to generate two reconstructed tomograms based on the even/odd f
 These two (even and odd) tomograms can be used as input to this cryoCARE implementation.
 
 ## Changelog
-
 
 ### Version 0.3
 
