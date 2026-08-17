@@ -13,6 +13,7 @@
 
       # Other packages ...
       conda install -c conda-forge jupyterlab
+      conda install -c conda-forge mrcfile
 
       # Borrame
       pip install tensorflow==2.8.0
