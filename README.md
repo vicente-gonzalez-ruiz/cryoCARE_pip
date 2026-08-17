@@ -3,10 +3,12 @@
 ## Update
 
       pip install tensorflow==2.8.0
+      pip install "protobuf==3.20.3"
       pip install "numpy<2" mrcfile csbdeep psutil
       pip install --no-deps git+https://github.com/vicente-gonzalez-ruiz/cryoCARE_pip.git
       pip install nvidia-cuda-runtime nvidia-cublas
       pip install nvidia-cudnn-cu13
+      pip install nvidia-cuda-runtime-cu11
 
 ## Old stuff
 
