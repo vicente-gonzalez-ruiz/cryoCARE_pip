@@ -1,5 +1,11 @@
 # cryoCARE
 
+## Update
+
+      pip install tensorflow==2.8.0
+      pip install "numpy<2" mrcfile csbdeep psutil
+      pip install --no-deps git+https://github.com/vicente-gonzalez-ruiz/cryoCARE_pip.git
+
 This package is a memory efficient implementation of [cryoCARE](https://github.com/juglab/cryoCARE_T2T). 
 
 This setup trains a denoising U-Net for tomographic reconstruction according to the [Noise2Noise](https://arxiv.org/pdf/1803.04189.pdf) training paradigm. 
