@@ -2,6 +2,16 @@
 
 ## Update
 
+      python
+      # Python 3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) 
+      # [GCC 13.3.0] on linux
+
+      curl -O https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+      bash Miniconda3-latest-Linux-x86_64.sh
+      source ~/.zshrc
+      conda config --set auto_activate_base false
+
+      # Borrame
       pip install tensorflow==2.8.0
       pip install "protobuf==3.20.3"
       pip install "numpy<2" mrcfile csbdeep psutil
