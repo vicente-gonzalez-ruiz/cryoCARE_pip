@@ -10,6 +10,8 @@
       python
       # Python 3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:52:49) 
       # [GCC 13.3.0] on linux
+
+      # Remember to install this package instead of the original one!
       
 ## Old stuff ...
 
